@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #9e0d0d;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  height: 20vh;
+}
+nav a {
+  color: #e9e9e9;
+  text-decoration: none;
+}
+nav a h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+nav a h1 i {
+  font-size: 24px;
+  margin: 0px 10px;
+}
+nav a i {
+  font-size: 30px;
+}
+
+.carouselcontainer {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 60vh;
+  margin-top: 3rem;
+}
+.carouselcontainer .carousel {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  transform: translateX(0);
+}
+.carouselcontainer .carousel .slide {
+  text-align: center;
+  width: 100vw;
+}
+.carouselcontainer .carousel .slide img {
+  object-fit: cover;
+  max-height: 500px;
+  max-width: 500px;
+}
+.carouselcontainer .carousel .slide h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 40px;
+}
+.carouselcontainer .carousel .slide button {
+  background-color: #272727;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-family: inherit;
+}
+.carouselcontainer .arrow {
+  background-color: transparent;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  top: 30%;
+  font-size: 5rem;
+  color: black;
+  opacity: 0.5;
+  transform: translateY(-50%);
+}
+.carouselcontainer .left {
+  left: 2rem;
+}
+.carouselcontainer .right {
+  right: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

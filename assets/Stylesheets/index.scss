@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+$red-color: rgb(158, 13, 13);
+$nav-color: rgb(233, 233, 233);
+$size: 500px;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: $red-color;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    height: 20vh;
+
+    a{
+        color: $nav-color;
+        text-decoration: none;
+
+        h1{
+            font-size: 50px;
+            font-weight: 800;
+            i{
+                font-size: 24px;
+                margin: 0px 10px;
+            }
+        }
+        i{
+            font-size: 30px;
+        }
+    }
+}
+
+.carouselcontainer{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 60vh;
+    margin-top: 3rem;
+
+    .carousel{
+        display: flex;
+        position: absolute;
+        top:0;
+        left:0px;
+        transform: translateX(0);
+    
+        .slide{
+            text-align: center;
+            width: 100vw;
+
+    
+            img{
+                object-fit: cover;
+                max-height: $size;
+                max-width: $size;
+            }
+            h2{
+                color: white;
+                font: {
+                    weight: 600;
+                    size: 40px;
+                }
+            }
+            button{
+                background-color: rgb(39, 39, 39);
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-family: inherit;
+            }
+    
+        }
+    }
+    .arrow{
+        background-color: transparent;
+        position: absolute;
+        cursor: pointer;
+        border: none;
+        top: 30%;
+        font-size: 5rem;
+        color:black;
+        opacity: 0.5;
+        transform:translateY(-50%);
+    }
+    .left{
+        left: 2rem;
+    }
+    .right{
+        right: 2rem;
+    }
+}
+
+
+
+

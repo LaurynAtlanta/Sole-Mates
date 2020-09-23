@@ -5,37 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sole Mates</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/Stylesheets/index.scss">
+    <link rel="stylesheet" href="assets/Stylesheets/Css/style.css">
 </head>
 <body>
     <nav>
         <a href="/"><i class="fas fa-bars"></i></a>
-        <a href="/index.html" class='logo'><h1>Sole Mates</h1></a>
+        <a href="/index.html" class='logo'>
+            <h1>
+                <i class="fas fa-shoe-prints"></i>
+                Sole Mates
+                <i class="fas fa-shoe-prints"></i>
+            </h1>
+        </a>
         <a href="/"><i class="fas fa-phone"></i></a>
     </nav>
 
-    <div class="carousel">
-        <div class="slide">
-            <img src="/assets/images/addidas.png" alt="Addidas">
-            <h2>Performance</h2>
-            <button class='learnMore'>Learn More</button>
+    <div class="carouselcontainer">
+        <div class="carousel">
+            <div class="slide">
+                <img src="/assets/images/addidas.png" alt="Addidas">
+                <h2>Performance</h2>
+                <button class='learnMore'>Learn More</button>
+            </div>
+            <div class="slide">
+                <img src="/assets/images/addidas2.png" alt="Nike">
+                <h2>Comfortability</h2>
+                <button class='learnMore'>Learn More</button>
+            </div>
+            <div class="slide">
+                <img src="/assets/images/nike2.png" alt="Two Nikes">
+                <h2>Style</h2>
+                <button class='learnMore'>Learn More</button>
+            </div>
+    
         </div>
-        <div class="slide">
-            <img src="/assets/images/Nike.png" alt="Nike">
-            <h2>Comfortability</h2>
-            <button class='learnMore'>Learn More</button>
-        </div>
-        <div class="slide">
-            <img src="/assets/images/nike2.png" alt="Two Nikes">
-            <h2>Style</h2>
-            <button class='learnMore'>Learn More</button>
-        </div>
-
-        <a href=""><i class="fas fa-chevron-left"></i></a>
-        <a href=""><i class="fas fa-chevron-right"></i></a>
-
+        <button class='left arrow'><i class="fas fa-chevron-left"></i></button>
+        <button class='right arrow'><i class="fas fa-chevron-right"></i></button>
         <div class="whichslide"></div>
     </div>
+    
 
     <script src='assets/script/index.js'></script>
 </body>
